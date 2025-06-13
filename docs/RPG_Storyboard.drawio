@@ -1,0 +1,102 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36" version="26.2.8">
+  <diagram name="Page-1" id="rChUe9YrmQqw9DN9SYzU">
+    <mxGraphModel dx="1505" dy="1032" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="hUfbqAPD3xkRCA3f0Q4D-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="hUfbqAPD3xkRCA3f0Q4D-2" target="hUfbqAPD3xkRCA3f0Q4D-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hUfbqAPD3xkRCA3f0Q4D-7" value="(1)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="hUfbqAPD3xkRCA3f0Q4D-5">
+          <mxGeometry x="-0.1742" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hUfbqAPD3xkRCA3f0Q4D-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="hUfbqAPD3xkRCA3f0Q4D-2" target="hUfbqAPD3xkRCA3f0Q4D-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hUfbqAPD3xkRCA3f0Q4D-8" value="(2)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="hUfbqAPD3xkRCA3f0Q4D-6">
+          <mxGeometry x="-0.0519" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hUfbqAPD3xkRCA3f0Q4D-2" value="you have made your way to the maintenance tunnels of the ship to the east you see the way forwards a maintenance droid lies in ruin on the path your currently in has tools strewn about the floor&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;would you like to&amp;nbsp;&lt;/div&gt;&lt;div&gt;(1) push past the droid&lt;/div&gt;&lt;div&gt;(2) search the tools&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="60" y="100" width="220" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="hUfbqAPD3xkRCA3f0Q4D-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="hUfbqAPD3xkRCA3f0Q4D-3" target="hUfbqAPD3xkRCA3f0Q4D-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="550" y="100" />
+              <mxPoint x="550" y="20" />
+              <mxPoint x="170" y="20" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hUfbqAPD3xkRCA3f0Q4D-3" value="1&lt;div&gt;you continue east towards the droid its hulking body towers in the corridor you try to climb past it but slip back down&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Hazard + 1&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="360" y="40" width="170" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="hUfbqAPD3xkRCA3f0Q4D-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hUfbqAPD3xkRCA3f0Q4D-4" target="hUfbqAPD3xkRCA3f0Q4D-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hUfbqAPD3xkRCA3f0Q4D-12" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="hUfbqAPD3xkRCA3f0Q4D-11">
+          <mxGeometry x="-0.3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hUfbqAPD3xkRCA3f0Q4D-4" value="2&lt;div&gt;as your searching through the scattered tools you see a diagnostic tool and pick it up maybe this can work on the droid&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ 10 score&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Would you like to&amp;nbsp;&lt;/div&gt;&lt;div&gt;(1) attempt to repair the droid&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="360" y="205" width="180" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="hUfbqAPD3xkRCA3f0Q4D-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hUfbqAPD3xkRCA3f0Q4D-10" target="hUfbqAPD3xkRCA3f0Q4D-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hUfbqAPD3xkRCA3f0Q4D-23" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="hUfbqAPD3xkRCA3f0Q4D-14">
+          <mxGeometry x="-0.0397" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hUfbqAPD3xkRCA3f0Q4D-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="hUfbqAPD3xkRCA3f0Q4D-10" target="hUfbqAPD3xkRCA3f0Q4D-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hUfbqAPD3xkRCA3f0Q4D-22" value="2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="hUfbqAPD3xkRCA3f0Q4D-21">
+          <mxGeometry x="-0.2074" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hUfbqAPD3xkRCA3f0Q4D-10" value="1&lt;div&gt;you use the diagnostic tool on the damaged droid you hear the hum of electricity as it powers on it moves on its way clearing the path for you to continue&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ 20 score&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;would you like to&lt;/div&gt;&lt;div&gt;(1) continue east&lt;/div&gt;&lt;div&gt;(2) return to previous place&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="620" y="200" width="180" height="195" as="geometry" />
+        </mxCell>
+        <mxCell id="hUfbqAPD3xkRCA3f0Q4D-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hUfbqAPD3xkRCA3f0Q4D-13" target="hUfbqAPD3xkRCA3f0Q4D-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hUfbqAPD3xkRCA3f0Q4D-24" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="hUfbqAPD3xkRCA3f0Q4D-16">
+          <mxGeometry x="-0.275" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hUfbqAPD3xkRCA3f0Q4D-13" value="1&lt;div&gt;you move east again through the tunnel past where the droid was and find yourself at the docking bay the bay is filled with ships and machines of all kind they seem to be powered by some type of energy crystal&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;would you like to&amp;nbsp;&lt;/div&gt;&lt;div&gt;(1) attempt to take crystal&lt;/div&gt;&lt;div&gt;(2) explore the room more&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="880" y="187.5" width="180" height="225" as="geometry" />
+        </mxCell>
+        <mxCell id="hUfbqAPD3xkRCA3f0Q4D-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hUfbqAPD3xkRCA3f0Q4D-15" target="hUfbqAPD3xkRCA3f0Q4D-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hUfbqAPD3xkRCA3f0Q4D-25" value="status" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="hUfbqAPD3xkRCA3f0Q4D-18">
+          <mxGeometry x="-0.1574" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hUfbqAPD3xkRCA3f0Q4D-15" value="1&lt;div&gt;you grab the crystal from its place and feel its energy&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;score +50&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;view current status by typing status&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="235" width="180" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="hUfbqAPD3xkRCA3f0Q4D-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hUfbqAPD3xkRCA3f0Q4D-17" target="hUfbqAPD3xkRCA3f0Q4D-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hUfbqAPD3xkRCA3f0Q4D-17" value="status&lt;div&gt;Score: 80&lt;/div&gt;&lt;div&gt;Hazards: 1&lt;/div&gt;&lt;div&gt;Crystal: obtained&lt;/div&gt;&lt;div&gt;awaiting win protocol type win to continue&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1400" y="235" width="180" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="hUfbqAPD3xkRCA3f0Q4D-19" value="win&lt;div&gt;Final score:&lt;/div&gt;&lt;div&gt;Diagnostic tool obtained +10&lt;/div&gt;&lt;div&gt;Droid Repaired +20&lt;/div&gt;&lt;div&gt;Crystal Obtained +50&lt;/div&gt;&lt;div&gt;Victory bonus +30&lt;/div&gt;&lt;div&gt;Final tally: 110&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Hazards:&lt;/div&gt;&lt;div&gt;encountered droid +1&lt;/div&gt;&lt;div&gt;Final tally: 1&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Mission succesful return to base&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1660" y="190" width="180" height="220" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
