@@ -16,6 +16,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added edge case tests for player movement (case sensitivity, whitespace handling)
 - Added tests for multiple item pickup attempts
 - Added tests for droid blocking and repair mechanics
+- Added comprehensive project documentation (README.md, CONTRIBUTING.md)
+- Added MIT License file
+- Added requirements.txt for future dependencies
 
 ### Changed
 - Removed duplicate class definitions from `game.py` and updated imports to use module versions
