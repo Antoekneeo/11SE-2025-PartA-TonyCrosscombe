@@ -9,6 +9,7 @@ from .droid import DamagedMaintenanceDroid
 from .diagnostic_tool import DiagnosticTool
 from .energy_crystal import EnergyCrystal
 
+
 class GameController:
     """
     Controls the main game loop and manages game state.
@@ -133,7 +134,10 @@ class GameController:
             return False
             
         # All conditions met - player wins!
-        self.player.score += 30  # Bonus for winning
+        # Only add the bonus if it hasn't been added yet
+        if not hasattr(self, '_win_bonus_added'):
+            self._win_bonus_added = True
+            self.player.score += 30  # Bonus for winning
         return True
     
     def show_help(self) -> None:

@@ -9,6 +9,39 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Set up testing framework with pytest
 - Created `tests/` directory structure
+- Added comprehensive test coverage for core game mechanics
+- Added `requirements-dev.txt` with development dependencies
+- Added mock tests for game controller input/output
+- Added test cases for win conditions and game flow
+- Added edge case tests for player movement (case sensitivity, whitespace handling)
+- Added tests for multiple item pickup attempts
+- Added tests for droid blocking and repair mechanics
+
+### Changed
+- Removed duplicate class definitions from `game.py` and updated imports to use module versions
+- Improved code organization by moving classes to dedicated module files
+- Enhanced encapsulation by making class attributes private and adding getters/setters
+- Updated `Location` and `Player` classes to use proper property decorators
+- Fixed test compatibility with new encapsulated design
+- Updated project structure to support testing
+- Improved code organization for better testability
+- Enhanced docstrings to support test documentation
+- Refactored test imports for better maintainability
+- Improved error handling in test fixtures
+- Updated Player.move() to handle case-insensitive directions
+- Improved test isolation and reliability
+- Enhanced test coverage for edge cases
+- Fixed PEP 8 style issues throughout the codebase
+- Removed redundant `game.py` file
+
+### Fixed
+- Fixed bug where player started with the diagnostic tool in their inventory
+- Fixed bug where the win bonus (30 points) was being added multiple times if the win condition was checked more than once
+- Fixed import structure to work with test modules
+- Fixed droid blocking logic in Player.move()
+- Fixed test cases to match actual game behavior
+- Fixed test assertions to be more robust
+- Fixed all PEP 8 style issues in Python files
 
 ### Changed
 - Removed duplicate class definitions from `game.py` and updated imports to use module versions
@@ -19,6 +52,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 - Fixed bug where player started with the diagnostic tool in their inventory
+- Fixed bug where the win bonus (30 points) was being added multiple times if the win condition was checked more than once
 - Added `conftest.py` with test fixtures
 - Added unit tests for `StationItem` and its subclasses in `test_items.py`
 - Added unit tests for `Location` class in `test_location.py`

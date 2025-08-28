@@ -4,6 +4,7 @@ Main entry point for the Space Station RPG game.
 """
 from rpg_game.game.game_controller import GameController
 
+
 def main():
     """
     Initialize and start the game.
@@ -16,6 +17,7 @@ def main():
     except Exception as e:
         print(f"\nAn error occurred: {e}")
         print("The game will now exit.")
+
 
 if __name__ == "__main__":
     main()

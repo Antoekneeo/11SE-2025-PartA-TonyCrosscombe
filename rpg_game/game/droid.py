@@ -1,11 +1,13 @@
 """
-Module containing the DamagedMaintenanceDroid class.
+Module containing the DamagedMaintenanceDroid class for the game.
 """
+
 
 class DamagedMaintenanceDroid:
     """
     Represents a damaged maintenance droid that blocks the player's path until repaired.
     """
+
     def __init__(self):
         """Initialize the droid in a blocking state."""
         self.blocking = True

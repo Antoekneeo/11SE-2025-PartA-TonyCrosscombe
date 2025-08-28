@@ -1,13 +1,15 @@
 """
-Module containing the DiagnosticTool class.
+Module containing the DiagnosticTool class for the game.
 """
 
 from .station_item import StationItem
+
 
 class DiagnosticTool(StationItem):
     """
     A diagnostic tool used to repair the maintenance droid.
     """
+
     def __init__(self):
         """Initialize the diagnostic tool with default values."""
         super().__init__(

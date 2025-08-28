@@ -1,13 +1,15 @@
 """
-Module containing the EnergyCrystal class.
+Module containing the EnergyCrystal class for the game.
 """
 
 from .station_item import StationItem
+
 
 class EnergyCrystal(StationItem):
     """
     A volatile energy crystal that the player must collect.
     """
+
     def __init__(self):
         """Initialize the energy crystal with default values."""
         super().__init__(

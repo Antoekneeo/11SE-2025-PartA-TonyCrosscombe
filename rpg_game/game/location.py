@@ -1,11 +1,13 @@
 """
-Module containing the Location class for game locations.
+Module containing the Location class for the game's locations.
 """
+
 
 class Location:
     """
     Represents a location in the game world that can contain items and connect to other locations.
     """
+
     def __init__(self, name: str, description: str):
         """
         Initialize a new location.

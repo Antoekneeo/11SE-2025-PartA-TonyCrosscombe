@@ -6,6 +6,7 @@ from typing import Tuple
 from .location import Location
 from .droid import DamagedMaintenanceDroid
 
+
 class Player:
     """
     Represents the player in the game, tracking their state, inventory, and score.
