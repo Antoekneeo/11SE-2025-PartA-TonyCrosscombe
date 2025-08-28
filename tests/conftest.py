@@ -2,15 +2,13 @@
 Pytest configuration and fixtures for the RPG Game tests.
 """
 import pytest
-from rpg_game.game import (
-    StationItem,
-    DiagnosticTool,
-    EnergyCrystal,
-    Location,
-    DamagedMaintenanceDroid,
-    Player,
-    GameController
-)
+from rpg_game.game.station_item import StationItem
+from rpg_game.game.diagnostic_tool import DiagnosticTool
+from rpg_game.game.energy_crystal import EnergyCrystal
+from rpg_game.game.location import Location
+from rpg_game.game.droid import DamagedMaintenanceDroid
+from rpg_game.game.player import Player
+from rpg_game.game.game_controller import GameController
 
 @pytest.fixture
 def sample_item():
@@ -29,8 +27,11 @@ def energy_crystal():
 
 @pytest.fixture
 def maintenance_tunnels():
-    """Return a Location instance for Maintenance Tunnels."""
-    return Location("Maintenance Tunnels", "A dimly lit maintenance area.")
+    """Return a Location instance for Maintenance Tunnels with a droid."""
+    loc = Location("Maintenance Tunnels", "A dimly lit maintenance area.")
+    loc.droid = DamagedMaintenanceDroid()
+    loc.droid_present = True
+    return loc
 
 @pytest.fixture
 def docking_bay():

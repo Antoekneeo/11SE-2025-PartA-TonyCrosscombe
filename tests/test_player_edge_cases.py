@@ -2,27 +2,50 @@
 Edge case tests for the Player class.
 """
 import pytest
-from rpg_game.game import DamagedMaintenanceDroid
+from rpg_game.game.droid import DamagedMaintenanceDroid
 
-def test_move_case_insensitive(player, maintenance_tunnels, docking_bay):
+def test_move_case_insensitive():
     """Test that movement works with case-insensitive directions."""
+    from rpg_game.game.location import Location
+    from rpg_game.game.player import Player
+    
+    # Create test locations without droid
+    start = Location("Start", "Starting location")
+    end = Location("End", "Destination location")
+    
     # Add exits in both directions
-    maintenance_tunnels.add_exit("east", docking_bay)
-    docking_bay.add_exit("west", maintenance_tunnels)
+    start.add_exit("east", end)
+    end.add_exit("west", start)
+    
+    # Create player at start location
+    player = Player(start)
     
     # Test moving east with different cases
     assert player.move("EAST") is True
-    assert player.current_location == docking_bay
+    assert player.current_location == end
     
-    # Test moving back west with different case
+    # Test moving west with different cases
     assert player.move("WEST") is True
-    assert player.current_location == maintenance_tunnels
+    assert player.current_location == start
 
-def test_move_whitespace_handling(player, maintenance_tunnels, docking_bay):
+def test_move_whitespace_handling():
     """Test that movement works with extra whitespace in direction."""
-    maintenance_tunnels.add_exit("east", docking_bay)
+    from rpg_game.game.location import Location
+    from rpg_game.game.player import Player
+    
+    # Create test locations without droid
+    start = Location("Start", "Starting location")
+    end = Location("End", "Destination location")
+    
+    # Add exit with whitespace in direction
+    start.add_exit("east", end)
+    
+    # Create player at start location
+    player = Player(start)
+    
+    # Test movement with extra whitespace
     assert player.move("  east  ") is True
-    assert player.current_location == docking_bay
+    assert player.current_location == end
 
 def test_pick_up_tool_multiple_attempts(player, maintenance_tunnels):
     """Test that tool can only be picked up once from a location."""

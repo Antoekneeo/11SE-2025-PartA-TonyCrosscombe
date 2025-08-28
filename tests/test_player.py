@@ -2,6 +2,7 @@
 Tests for the Player class.
 """
 import pytest
+from rpg_game.game.player import Player
 
 def test_player_initialization(player, maintenance_tunnels):
     """Test that Player initializes with correct default values."""
@@ -11,11 +12,22 @@ def test_player_initialization(player, maintenance_tunnels):
     assert player.score == 0
     assert player.hazard_count == 0
 
-def test_move_successful(player, maintenance_tunnels, docking_bay):
+def test_move_successful():
     """Test successful movement between locations."""
-    maintenance_tunnels.add_exit("east", docking_bay)
+    from rpg_game.game.location import Location
+    from rpg_game.game.player import Player
+    
+    # Create test locations without droid
+    start = Location("Start", "Starting location")
+    end = Location("End", "Destination location")
+    start.add_exit("east", end)
+    
+    # Create player at start location
+    player = Player(start)
+    
+    # Test movement
     assert player.move("east") is True
-    assert player.current_location == docking_bay
+    assert player.current_location == end
 
 def test_move_blocked_by_droid(player, maintenance_tunnels, docking_bay):
     """Test movement blocked by droid increments hazard count."""
@@ -64,9 +76,17 @@ def test_use_tool_no_tool(player, maintenance_tunnels):
     assert maintenance_tunnels.droid_present is True
     assert player.score == 0
 
-def test_use_tool_no_droid(player):
+def test_use_tool_no_droid():
     """Test using tool when no droid is present."""
+    from rpg_game.game.location import Location
+    from rpg_game.game.player import Player
+    
+    # Create a location with no droid
+    location = Location("Test Location", "A test location")
+    player = Player(location)
     player.has_tool = True
+    
+    # Test using tool with no droid present
     assert player.use_tool_on_droid() is False
     assert player.score == 0
 

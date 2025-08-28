@@ -2,7 +2,7 @@
 """
 Main entry point for the Space Station RPG game.
 """
-from rpg_game.game import GameController
+from rpg_game.game.game_controller import GameController
 
 def main():
     """
@@ -17,5 +17,5 @@ def main():
         print(f"\nAn error occurred: {e}")
         print("The game will now exit.")
 
-if __name__ == "__main__":
+if __name__ == "main":
     main()

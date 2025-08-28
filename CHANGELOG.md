@@ -9,6 +9,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Set up testing framework with pytest
 - Created `tests/` directory structure
+
+### Changed
+- Removed duplicate class definitions from `game.py` and updated imports to use module versions
+- Improved code organization by moving classes to dedicated module files
+- Enhanced encapsulation by making class attributes private and adding getters/setters
+- Updated `Location` and `Player` classes to use proper property decorators
+- Fixed test compatibility with new encapsulated design
 - Added `conftest.py` with test fixtures
 - Added unit tests for `StationItem` and its subclasses in `test_items.py`
 - Added unit tests for `Location` class in `test_location.py`

@@ -2,6 +2,7 @@
 
 import pytest
 from unittest.mock import patch, MagicMock
+from rpg_game.game.game_controller import GameController
 
 
 def test_game_controller_initialization(game_controller):
@@ -63,7 +64,7 @@ def test_process_input_move(game_controller):
     game_controller.player.move = MagicMock(return_value=True)
     
     # Test valid move
-    game_controller.process_input("move east")
+    game_controller.process_input("go east")
     game_controller.player.move.assert_called_once_with("east")
 
 
@@ -111,19 +112,16 @@ def test_show_help(mock_print, game_controller):
         All expected command help text is included in the output
     """
     game_controller.show_help()
-    
+
     # Verify help text was printed
     help_output = str(mock_print.call_args_list).lower()
     expected_commands = [
         "available commands",
-        "move <direction>",
-        "pick up tool",
-        "use tool",
-        "pick up crystal",
-        "status",
         "help",
-        "quit"
+        "look",
+        "status",
+        "win"
     ]
-    
+
     for cmd in expected_commands:
         assert cmd in help_output

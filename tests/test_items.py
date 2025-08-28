@@ -1,7 +1,9 @@
 """Tests for item-related classes (StationItem, DiagnosticTool, EnergyCrystal)."""
 
 import pytest
-from rpg_game.game import StationItem, DiagnosticTool, EnergyCrystal
+from rpg_game.game.station_item import StationItem
+from rpg_game.game.diagnostic_tool import DiagnosticTool
+from rpg_game.game.energy_crystal import EnergyCrystal
 
 
 def test_station_item_initialization(sample_item):
