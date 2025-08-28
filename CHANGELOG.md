@@ -16,6 +16,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Enhanced encapsulation by making class attributes private and adding getters/setters
 - Updated `Location` and `Player` classes to use proper property decorators
 - Fixed test compatibility with new encapsulated design
+
+### Fixed
+- Fixed bug where player started with the diagnostic tool in their inventory
 - Added `conftest.py` with test fixtures
 - Added unit tests for `StationItem` and its subclasses in `test_items.py`
 - Added unit tests for `Location` class in `test_location.py`

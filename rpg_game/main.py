@@ -17,5 +17,5 @@ def main():
         print(f"\nAn error occurred: {e}")
         print("The game will now exit.")
 
-if __name__ == "main":
+if __name__ == "__main__":
     main()

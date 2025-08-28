@@ -59,7 +59,6 @@ class GameController:
         
         # Create player
         self.player = Player(self.maintenance_tunnels)
-        self.player.has_tool = True
     
     def start_game(self) -> None:
         """Start the main game loop."""
