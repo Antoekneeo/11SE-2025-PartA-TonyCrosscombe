@@ -210,23 +210,32 @@ class Player:
         Returns:
             bool: True if the move was successful, False otherwise
         """
-        # Normalize the direction to lowercase
-        direction = direction.lower()
+        # Normalize the direction: trim whitespace and convert to lowercase
+        direction = direction.strip().lower()
         
-        # Check if the direction is valid
-        if direction not in self.current_location.exits:
+        # Check if the direction is valid by looking for a case-insensitive match
+        matching_direction = None
+        for exit_dir in self.current_location.exits:
+            if exit_dir.lower() == direction:
+                matching_direction = exit_dir
+                break
+        
+        if matching_direction is None:
             print(f"There is no exit to the {direction}.")
             return False
             
-        # Check if the droid is blocking the path
-        if self.current_location.droid_present and direction == 'east':
+        # Check if the droid is blocking the path (eastward movement only)
+        if (self.current_location.droid_present and 
+                matching_direction.lower() == 'east' and 
+                hasattr(self.current_location, 'droid') and 
+                self.current_location.droid.is_blocking()):
             self.hazard_count += 1
             print("A maintenance droid blocks your way!")
             return False
             
         # Move to the new location
-        self.current_location = self.current_location.exits[direction]
-        print(f"You move {direction} to {self.current_location.name}.")
+        self.current_location = self.current_location.exits[matching_direction]
+        print(f"You move {matching_direction} to {self.current_location.name}.")
         return True
     
     def pick_up_tool(self) -> bool:
@@ -399,15 +408,18 @@ class GameController:
         if (self.player.current_location == self.docking_bay and 
                 self.player.has_crystal and 
                 self.last_command_was_win):
-            self.player.score += 30
+            self.player.score += 30  # Add win bonus
             print("\n=== Congratulations! You've won! ===")
             score, hazards = self.player.get_status()
-            print(f"Final Score: {score} | Hazards: {hazards}")
+            print(f"Final Score: {score} | Hazards: {hazards}")  # Now shows 110
             if hazards == 0:
                 print("Perfect! You completed the mission with no hazards!")
             return True
         elif self.last_command_was_win:
             print("You can't win yet! Make sure you're in the Docking Bay with the crystal.")
+            # Show current score for feedback
+            score, hazards = self.player.get_status()
+            print(f"Current Score: {score} | Hazards: {hazards}")
         return False
     
     @staticmethod

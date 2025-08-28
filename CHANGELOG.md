@@ -5,6 +5,47 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+### Added
+- Set up testing framework with pytest
+- Created `tests/` directory structure
+- Added `conftest.py` with test fixtures
+- Added unit tests for `StationItem` and its subclasses in `test_items.py`
+- Added unit tests for `Location` class in `test_location.py`
+- Added unit tests for `Player` class in `test_player.py`
+- Added unit tests for `GameController` class in `test_game_controller.py`
+- Added comprehensive test coverage for core game mechanics
+- Added `requirements-dev.txt` with development dependencies
+- Added mock tests for game controller input/output
+- Added test cases for win conditions and game flow
+- Added edge case tests for player movement (case sensitivity, whitespace handling)
+- Added tests for multiple item pickup attempts
+- Added tests for droid blocking and repair mechanics
+
+### Changed
+- Updated project structure to support testing
+- Improved code organization for better testability
+- Enhanced docstrings to support test documentation
+- Refactored test imports for better maintainability
+- Improved error handling in test fixtures
+- Updated Player.move() to handle case-insensitive directions
+- Improved test isolation and reliability
+- Enhanced test coverage for edge cases
+
+### Fixed
+- Fixed import structure to work with test modules
+- Fixed droid blocking logic in Player.move()
+- Fixed test cases to match actual game behavior
+- Fixed test assertions to be more robust
+- Fixed test setup for droid-related tests
+- Fixed docstring formatting in test files to use triple double-quotes consistently
+- Fixed test_start_game_help_command test to properly test help functionality
+- Resolved StopIteration issues in test input mocking
+- Improved test reliability and maintainability
+- Resolved circular import issues in test setup
+- Fixed docstring formatting in test files
+- Fixed test assertions for better error messages
+
 ## [2025-06-30] - Initial Setup
 ### Added
 - Created project directory structure
