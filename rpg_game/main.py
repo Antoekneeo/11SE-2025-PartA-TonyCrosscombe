@@ -2,7 +2,7 @@
 """
 Main entry point for the Space Station RPG game.
 """
-from rpg_game.game.game_controller import GameController
+from game.game_controller import GameController
 
 
 def main():
